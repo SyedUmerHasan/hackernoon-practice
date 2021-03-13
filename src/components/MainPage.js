@@ -57,7 +57,7 @@ export default class MainPage extends Component {
                 <div className="main-page body-width">
 
                     <div className="container">
-                        <PostTitle title={this.state.title} ></PostTitle>
+                        <PostTitle title={this.state.postTitle} ></PostTitle>
                     </div>
 
                     <div className="row bookmark-container">
