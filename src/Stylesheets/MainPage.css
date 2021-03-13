@@ -216,10 +216,7 @@ h2.lineheading span { background-color: rgb(33, 36, 40); padding:0 10px; }
   transition: background-color 200ms ease 0s;
   padding: 20px;
   font-size: 14px;
-  display: flex;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
+  display: block;
 }
 
 .layout-footer li, .layout-footer a{

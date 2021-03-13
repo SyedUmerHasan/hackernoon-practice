@@ -30,6 +30,9 @@
 .card-image{
     height: 250px !important;
 }
+.shar-logo{
+    text-align: right;
+}
 
 @media (max-width: 767.98px){
     .row-eq-height{
@@ -41,4 +44,14 @@
         margin: auto;
         text-align: center;
     }
+    .story-nav{
+        display: none !important; 
+    }
+    .shar-logo{
+        text-align: center;
+    }
+    .bookmark-bar{
+        text-align: center;
+    }
 }
+
