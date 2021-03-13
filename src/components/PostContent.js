@@ -12,7 +12,11 @@ export default class PostContent extends Component {
             storyReactions: props.storyReactions
         }
     }
-
+    
+    /**
+     * Renders React Elements
+     * @returns 
+     */
     render() {
         return (
             <div className="row main-content">

@@ -2,6 +2,11 @@ import React from 'react'
 import LineHeading from './LineHeading'
 
 export default function Tags(props) {
+
+    /**
+     * Renders React Elements
+     * @returns 
+     */
     return (
         <div className="container">
             <div className="row tag-container">

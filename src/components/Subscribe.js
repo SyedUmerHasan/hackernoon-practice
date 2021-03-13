@@ -9,7 +9,11 @@ export default class Subscribe extends Component {
             profile : props.profile,
         }
     }
-
+    
+    /**
+     * Renders React Elements
+     * @returns 
+     */
     render() {
         return (
             <div className="row">

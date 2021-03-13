@@ -4,7 +4,10 @@ import '../Stylesheets/Header.css'
 
 export default class Header extends Component {
 
-    
+    /**
+     * Renders React Elements
+     * @returns 
+     */
     render() {
         return (
             <div className="header">

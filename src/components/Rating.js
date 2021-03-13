@@ -82,11 +82,16 @@ export default class Rating extends Component {
         }
     }
 
+    /**
+     * Renders React Elements
+     * @returns 
+     */
     render() {
         var total  = this.state.money + this.state.boat + this.state.light + this.state.heart;
         return (
             <div className="emoji">
-                <span className={this.state.center == null ? "d-flex flex-row-reverse img-actions" : "d-flex justify-content-center img-actions flex-row-reverse" }>
+                {/* If center exist in the state then align Rating in the center-aligned otherwise let it be right-aligned */}
+                <span className={!this.state.center ? "d-flex flex-row-reverse img-actions" : "d-flex justify-content-center img-actions flex-row-reverse" }>
                     <img alt="toggleMoney" src={money} onClick={this.toggleMoney} className= {!this.state.moneyStatus ? "img-responsive" : "img-responsive active"} />
                     <img alt="toggleBoat" src={boat} onClick={this.toggleBoat} className={!this.state.boatStatus ? "img-responsive" : "img-responsive active"} />
                     <img alt="toggleLight" src={light} onClick={this.toggleLight} className={!this.state.lightStatus ? "img-responsive" : "img-responsive active"} />

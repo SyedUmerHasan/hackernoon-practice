@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 
 export default class Footer extends Component {
+
+    /**
+     * Renders React Elements
+     * @returns 
+     */
     render() {
         return (
             <footer class="layout-footer body-width">

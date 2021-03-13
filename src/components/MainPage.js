@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
 import '../Stylesheets/MainPage.css'
 import Bookmark from './Bookmark';
-import LineHeading from './LineHeading';
 import PostContent from './PostContent';
 import PostImage from './PostImage';
 import PostTitle from './PostTitle';
-import Profile from './Profile'
 import Rating from './Rating'
 import RelatedStories from './RelatedStories';
-import Subscribe from './Subscribe';
 import Tags from './Tags';
 import Footer from './Footer';
 import JoinUs from './JoinUs';
@@ -35,7 +32,9 @@ export default class MainPage extends Component {
             postImage: props.jsonData.mainImage,
             completedate: completedate,
             profile: props.jsonData.profile,
-            storyReactions: props.jsonData.reactions.storyReactions
+            storyReactions: props.jsonData.reactions.storyReactions,
+            relatedStories: props.jsonData.relatedStories,
+            tags: props.jsonData.tags,
         }
     }
 
@@ -58,7 +57,7 @@ export default class MainPage extends Component {
                 <div className="main-page body-width">
 
                     <div className="container">
-                        <PostTitle title={this.props.jsonData.title} ></PostTitle>
+                        <PostTitle title={this.state.title} ></PostTitle>
                     </div>
 
                     <div className="row bookmark-container">
@@ -77,17 +76,15 @@ export default class MainPage extends Component {
                         stringifiedHTML={this.props.jsonData.markup}
                         storyReactions={this.state.storyReactions} />
 
-                    <RelatedStories stories={this.props.jsonData.relatedStories}></RelatedStories>
+                    <RelatedStories stories={this.state.relatedStories}></RelatedStories>
 
 
-                    <Tags tags={this.props.jsonData.tags} />
+                    <Tags tags={this.state.tags} />
 
                     <JoinUs />
 
 
                 </div>
-
-                <Footer />
             </>
         )
     }

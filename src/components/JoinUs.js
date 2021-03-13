@@ -1,6 +1,11 @@
 import React from 'react'
 
 export default function JoinUs() {
+    
+    /**
+     * Renders React Elements
+     * @returns 
+     */
     return (
         <div className="row join-now-container body-width">
             <div className="join-now">

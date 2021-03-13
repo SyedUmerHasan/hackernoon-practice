@@ -12,6 +12,10 @@ export default class RelatedStories extends Component {
         }
     }
 
+    /**
+     * Renders React Elements
+     * @returns 
+     */
     render() {
         return (
 
