@@ -1,0 +1,16 @@
+.profile > img{
+    max-width: 75px;
+    object-fit: cover;
+    box-shadow: rgb(194 202 214) 0px 0.2em, rgb(194 202 214) 0px -0.2em, 
+    rgb(194 202 214) 0.2em 0px, rgb(194 202 214) -0.2em 0px;
+    
+}
+.profile > .profile-name{
+    font-weight: bold;
+    margin: 16px 0px;
+}
+
+.profile > .display-name{
+    font-weight: bold;
+    font-size: 14px;
+}

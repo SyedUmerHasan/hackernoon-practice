@@ -1,0 +1,44 @@
+.related-stories{
+
+}
+
+.related-image{
+    width: 100% !important;    
+    height: auto;
+}
+.related-stories .title{
+    height: 150px;
+}
+
+.card{
+    background-color: transparent !important;
+}
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    max-height: 250px !important;
+    margin: auto;
+}
+.border-related{
+    border-radius: 2px ;
+    border: 2px solid rgb(60, 60, 59);
+    margin: auto;
+}
+
+.card-image{
+    height: 250px !important;
+}
+
+@media (max-width: 767.98px){
+    .row-eq-height{
+        margin-left: 15px !important; 
+        margin-right: 15px !important; 
+    }
+    .join-now-container {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+}
